@@ -103,6 +103,19 @@ nav a:hover {
   font-weight: 400;
 }
 
+/* ---------- CUMBERLAND HERO ---------- */
+
+.cumberland-hero {
+
+  background-image:
+    linear-gradient(
+      rgba(0, 0, 0, 0.30),
+      rgba(0, 0, 0, 0.30)
+    ),
+    url("../images/cumberland-hero.png");
+
+}
+
 /* ---------- MAIN CONTENT ---------- */
 
 main {
