@@ -326,6 +326,76 @@ footer {
 
 }
 
+/* ---------- EMAIL INTERACTION ---------- */
+
+.email-container {
+
+  display: flex;
+
+  justify-content: center;
+
+  margin-top: 2rem;
+
+}
+
+.email-box {
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 1rem;
+
+  background-color: white;
+
+  color: #35524a;
+
+  padding: 0.9rem 1.4rem;
+
+  border-radius: 999px;
+
+  font-weight: 600;
+
+  min-width: 120px;
+
+  justify-content: center;
+
+  transition: 0.25s ease;
+
+}
+
+.copy-button {
+
+  display: none;
+
+  border: none;
+
+  background-color: #35524a;
+
+  color: white;
+
+  padding: 0.45rem 0.9rem;
+
+  border-radius: 999px;
+
+  cursor: pointer;
+
+  font-weight: 600;
+
+}
+
+.email-box.expanded {
+
+  min-width: 340px;
+
+}
+
+.email-box.expanded .copy-button {
+
+  display: inline-block;
+
+}
+
 /* ---------- MOBILE RESPONSIVE ---------- */
 
 @media (max-width: 768px) {
