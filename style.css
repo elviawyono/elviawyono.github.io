@@ -19,6 +19,7 @@ body {
 /* ---------- NAVIGATION ---------- */
 
 nav {
+
   position: fixed;
 
   top: 0;
@@ -27,31 +28,64 @@ nav {
 
   display: flex;
 
-  justify-content: center;
+  justify-content: space-between;
 
-  gap: 2rem;
+  align-items: center;
 
-  padding: 1.2rem;
+  padding: 1.2rem 3rem;
 
   background: rgba(229, 235, 215, 0.92);
 
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(12px);
 
   z-index: 1000;
+
+  box-sizing: border-box;
+
 }
 
-nav a {
+.nav-logo a {
+
   text-decoration: none;
 
-  color: #35524a;
+  color: #4e6a5e;
+
+  font-size: 1.4rem;
+
+  font-weight: 700;
+
+  letter-spacing: 0.02em;
+
+}
+
+.nav-links {
+
+  display: flex;
+
+  gap: 2rem;
+
+}
+
+.nav-links a {
+
+  text-decoration: none;
+
+  color: #2d2d2d;
 
   font-weight: 600;
 
+  font-size: 0.95rem;
+
+  letter-spacing: 0.04em;
+
   transition: 0.2s;
+
 }
 
-nav a:hover {
-  opacity: 0.7;
+.nav-links a:hover {
+
+  opacity: 0.65;
+
 }
 
 /* ---------- HERO SECTION ---------- */
