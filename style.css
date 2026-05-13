@@ -340,9 +340,11 @@ footer {
 
 .email-box {
 
-  display: flex;
+  display: inline-flex;
 
   align-items: center;
+
+  justify-content: center;
 
   gap: 1rem;
 
@@ -350,17 +352,15 @@ footer {
 
   color: #35524a;
 
-  padding: 0.9rem 1.4rem;
+  padding: 0.9rem 1.5rem;
 
   border-radius: 999px;
 
   font-weight: 600;
 
-  min-width: 120px;
+  cursor: pointer;
 
-  justify-content: center;
-
-  transition: 0.25s ease;
+  transition: all 0.25s ease;
 
 }
 
@@ -381,12 +381,6 @@ footer {
   cursor: pointer;
 
   font-weight: 600;
-
-}
-
-.email-box.expanded {
-
-  min-width: 340px;
 
 }
 
