@@ -68,23 +68,31 @@
 
 <section class="contact-section">
 
+  <section class="contact-section">
+
   <h2>Let’s Connect</h2>
 
   <p>
-    Interested in the project or looking to connect?
+    Feel free to reach out, I'd love to connect!
   </p>
 
   <div class="contact-buttons">
 
-    <a class="contact-button"
-       href="mailto:your.email@example.com">
-       Email Me
-    </a>
+    <button class="contact-button"
+            onclick="copyEmail()"
+            onmouseover="showEmail()"
+            onmouseout="hideEmail()">
+
+      <span id="email-text">Email</span>
+
+    </button>
 
     <a class="contact-button secondary"
        href="https://linkedin.com/in/yourlinkedin"
        target="_blank">
+
        LinkedIn
+
     </a>
 
   </div>
