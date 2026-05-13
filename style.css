@@ -458,4 +458,23 @@ footer {
   height: 300px;
   }
 
+  .cumberland-hero {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  background-image:
+    linear-gradient(
+      rgba(248,248,244,0.90),
+      rgba(248,248,244,0.90)
+    ),
+    url("../images/cumberland-hero.png");
+  }
+
+.cumberland-hero h1 {
+  font-size: 3.2rem;
+  }
+
+.cumberland-hero p {
+  font-size: 1rem;
+  }
+
 }
