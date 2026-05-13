@@ -141,8 +141,9 @@ h2 {
 
 /* ---------- APPROACH COMPARISON ---------- */
 .model-comparison {
-  margin-top: 0.8rem !important;
+  margin-top: 0.5rem !important;
   margin-bottom: 1rem !important;
+  padding-top: 0 !important;
   padding-bottom: 0 !important;
 }
 
