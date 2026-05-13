@@ -278,6 +278,54 @@ footer {
 
 }
 
+.email-row {
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  gap: 1rem;
+
+  margin-top: 2rem;
+
+  flex-wrap: wrap;
+
+}
+
+.email-text {
+
+  font-weight: 500;
+
+}
+
+.copy-button {
+
+  border: none;
+
+  background-color: white;
+
+  color: #35524a;
+
+  padding: 0.6rem 1rem;
+
+  border-radius: 999px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.2s;
+
+}
+
+.copy-button:hover {
+
+  opacity: 0.85;
+
+}
+
 /* ---------- MOBILE RESPONSIVE ---------- */
 
 @media (max-width: 768px) {
