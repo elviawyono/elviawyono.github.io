@@ -141,9 +141,9 @@ h2 {
 
 /* ---------- APPROACH COMPARISON ---------- */
 .model-comparison {
-  margin-top: 1rem !important;
-  margin-bottom: 2rem;
-  padding-top: 0 !important;
+  margin-top: 0.8rem !important;
+  margin-bottom: 1rem !important;
+  padding-bottom: 0 !important;
 }
 
 .model-comparison h3 {
@@ -155,6 +155,7 @@ h2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1.5rem;
+  margin-bottom: 0.8rem;
 }
 
 .comparison-grid figure {
@@ -166,17 +167,20 @@ h2 {
   height: auto;
   border-radius: 12px;
   border: 1px solid #ddd;
+  display: block;
 }
 
 .comparison-grid figcaption {
-  margin-top: 0.6rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0;
   font-size: 0.9rem;
   color: #666;
   text-align: center;
 }
 
 .model-caption {
-  margin-top: 1.2rem;
+  margin-top: 0.8rem;
+  margin-bottom: 0;
   line-height: 1.7;
   color: #444;
 }
