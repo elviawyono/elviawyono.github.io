@@ -165,6 +165,37 @@ function copyEmail(event) {
 
   }, 1500);
 
+let emailExpanded = false;
+
+function toggleEmail() {
+
+  if (window.innerWidth <= 768) {
+
+    navigator.clipboard.writeText(
+      "your.email@example.com"
+    );
+
+    const box =
+      document.getElementById("email-box");
+
+    box.classList.add("expanded");
+
+    document.getElementById("email-text").innerText =
+      "Copied!";
+
+    setTimeout(() => {
+
+      box.classList.remove("expanded");
+
+      document.getElementById("email-text").innerText =
+        "Email";
+
+    }, 1600);
+
+  }
+
+}
+
 }
 
 </script>
