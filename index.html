@@ -151,9 +151,13 @@ function copyEmail(event) {
   box.classList.add("expanded");
 
   document.getElementById("email-text").innerText =
-    isMobile() ? "Copied!" : myEmail;
+    myEmail;
 
-  document.getElementById("copy-btn").innerText = "Copied!";
+  document.getElementById("copy-btn").style.display =
+  "inline-block";
+
+  document.getElementById("copy-btn").innerText =
+  "Copied!";
 
   setTimeout(() => {
     document.getElementById("copy-btn").innerText = "Copy";
