@@ -161,6 +161,14 @@ transform: translateY(-70px);
   border-radius: 999px;
 }
 
+.cumberland-hero-line {
+  width: 85px;
+  height: 3px;
+  background-color: #c8a96b;
+  margin-bottom: 2rem;
+  border-radius: 999px;
+}
+
 /* ---------- MAIN CONTENT ---------- */
 
 main {
