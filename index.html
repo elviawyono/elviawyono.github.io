@@ -74,19 +74,26 @@
     Feel free to reach out, I'd love to connect!
   </p>
 
-  <div class="contact-buttons">
+  <div class="email-row">
 
-    <button class="contact-button"
+     <span class="email-text">
+      elviaw@uvic.ca
+    </span>
+
+    <button class="copy-button"
             onclick="copyEmail()"
-            onmouseover="showEmail()"
-            onmouseout="hideEmail()">
+            id="copy-btn">
 
-      <span id="email-text">Email</span>
+      Copy
 
     </button>
 
+  </div>
+
+  <div class="contact-buttons">
+
     <a class="contact-button secondary"
-       href="https://linkedin.com/in/elvia-w/"
+       href="https://linkedin.com/in/elvia-w"
        target="_blank">
 
        LinkedIn
@@ -109,33 +116,24 @@
   
 </html>
 
- <script>
+<script>
 
-    function showEmail() {
-      document.getElementById("email-text").innerText =
-        "elviaw@uvic.ca";
-    }
+function copyEmail() {
 
-    function hideEmail() {
-      document.getElementById("email-text").innerText =
-        "Email";
-    }
+  navigator.clipboard.writeText("elviaw@uvic.ca");
 
-    function copyEmail() {
+  const btn =
+    document.getElementById("copy-btn");
 
-      navigator.clipboard.writeText("elviaw@uvic.ca");
+  btn.innerText = "Copied!";
 
-      document.getElementById("email-text").innerText =
-        "Copied!";
+  setTimeout(() => {
+    btn.innerText = "Copy";
+  }, 1500);
 
-      setTimeout(() => {
-        document.getElementById("email-text").innerText =
-          "Email";
-      }, 1500);
+}
 
-    }
-
-  </script>
+</script>
 
 </body>
 </html>
