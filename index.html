@@ -112,9 +112,34 @@
     
   </footer>
   
-</body>
-  
-</html>
+<script>
+
+    function showEmail() {
+      document.getElementById("email-text").innerText =
+        "your.email@example.com";
+    }
+
+    function hideEmail() {
+      document.getElementById("email-text").innerText =
+        "Email";
+    }
+
+    function copyEmail() {
+
+      navigator.clipboard.writeText("your.email@example.com");
+
+      document.getElementById("email-text").innerText =
+        "Copied!";
+
+      setTimeout(() => {
+        document.getElementById("email-text").innerText =
+          "Email";
+      }, 1500);
+
+    }
+
+  </script>
+
 
 <script>
 
