@@ -80,18 +80,14 @@
   <div class="email-box"
        id="email-box"
        onmouseenter="showEmail()"
-       onmouseleave="hideEmail()">
+       onmouseleave="hideEmail()"
+       onclick="copyEmail(event)">
 
-    <span id="email-text">
-      Email
-    </span>
+    <span id="email-text">Email</span>
 
     <button class="copy-button"
-            id="copy-btn"
-            onclick="copyEmail(event)">
-
+            id="copy-btn">
       Copy
-
     </button>
 
   </div>
@@ -121,81 +117,53 @@
   </footer>
   
 <script>
+const myEmail = "elviaw@uvic.ca";
+
+function isMobile() {
+  return window.innerWidth <= 768;
+}
 
 function showEmail() {
+  if (isMobile()) return;
 
-  const box =
-    document.getElementById("email-box");
-
+  const box = document.getElementById("email-box");
   box.classList.add("expanded");
 
-  document.getElementById("email-text").innerText =
-    "elviaw@uvic.ca";
-
+  document.getElementById("email-text").innerText = myEmail;
 }
 
 function hideEmail() {
+  if (isMobile()) return;
 
-  const box =
-    document.getElementById("email-box");
-
+  const box = document.getElementById("email-box");
   box.classList.remove("expanded");
 
-  document.getElementById("email-text").innerText =
-    "Email";
-
+  document.getElementById("email-text").innerText = "Email";
+  document.getElementById("copy-btn").innerText = "Copy";
 }
 
 function copyEmail(event) {
-
   event.stopPropagation();
 
-  navigator.clipboard.writeText(
-    "elviaw@uvic.ca"
-  );
+  navigator.clipboard.writeText(myEmail);
 
-  const btn =
-    document.getElementById("copy-btn");
+  const box = document.getElementById("email-box");
+  box.classList.add("expanded");
 
-  btn.innerText = "Copied!";
+  document.getElementById("email-text").innerText =
+    isMobile() ? "Copied!" : myEmail;
+
+  document.getElementById("copy-btn").innerText = "Copied!";
 
   setTimeout(() => {
+    document.getElementById("copy-btn").innerText = "Copy";
 
-    btn.innerText = "Copy";
-
-  }, 1500);
-
-let emailExpanded = false;
-
-function toggleEmail() {
-
-  if (window.innerWidth <= 768) {
-
-    navigator.clipboard.writeText(
-      "your.email@example.com"
-    );
-
-    const box =
-      document.getElementById("email-box");
-
-    box.classList.add("expanded");
-
-    document.getElementById("email-text").innerText =
-      "Copied!";
-
-    setTimeout(() => {
-
+    if (isMobile()) {
       box.classList.remove("expanded");
-
-      document.getElementById("email-text").innerText =
-        "Email";
-
-    }, 1600);
-
-  }
-
+      document.getElementById("email-text").innerText = "Email";
+    }
+  }, 1500);
 }
-
 </script>
 
 </body>
