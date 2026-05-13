@@ -99,16 +99,35 @@ nav {
 .cumberland-hero {
   background-image:
     linear-gradient(
-      rgba(0, 0, 0, 0.12),
-      rgba(0, 0, 0, 0.12)
+      to right,
+      rgba(229, 235, 215, 0.92) 0%,
+      rgba(229, 235, 215, 0.72) 34%,
+      rgba(229, 235, 215, 0.18) 58%,
+      rgba(229, 235, 215, 0.00) 100%
     ),
     url("../images/cumberland-hero.png");
+}
+
+.cumberland-hero .hero-overlay {
+  transform: none;
+  max-width: 560px;
+  text-align: left;
+}
+
+.cumberland-hero h1 {
+  color: #4e6a5e;
+  text-shadow: none;
+}
+
+.cumberland-hero p {
+  color: #2d2d2d;
+  text-shadow: none;
 }
 
 /* ---------- HERO OVERLAY ---------- */
 
 .hero-overlay {
-  transform: translateY(-70px);
+transform: translateY(-70px);
 }
 
 /* ---------- HERO TEXT ---------- */
