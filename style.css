@@ -467,34 +467,34 @@ footer {
   }
 
  .cumberland-hero {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
   justify-content: center;
-  text-align: center;
+  align-items: center;
   background-image:
     linear-gradient(
       rgba(248,248,244,0.90),
       rgba(248,248,244,0.90)
     ),
     url("../images/cumberland-hero.png");
-  }
-  
-  .cumberland-hero .hero-overlay {
-    max-width: 100%;
-    text-align: center;
-    margin-left: 0;
-  }
+}
 
-  .cumberland-hero h1 {
+.cumberland-hero .hero-overlay {
+  max-width: 100%;
+  text-align: left;
+  margin-left: 0;
+}
+
+.cumberland-hero h1 {
   font-size: 3.2rem;
-  }
+}
 
-  .cumberland-hero p {
+.cumberland-hero p {
   font-size: 1rem;
-  }
+}
 
-  .cumberland-hero-line {
-  margin-left: auto;
-  margin-right: auto;
-  }  
+.cumberland-hero-line {
+  margin-left: 0;
+}
+  
 }
