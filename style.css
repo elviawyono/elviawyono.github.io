@@ -144,10 +144,10 @@ nav {
 
 
 /* =========================================================
-   5. SHARED / PROJECT CARDS any page using class="project-card".
+   5. EDUCATION CARDS
 ========================================================= */
 
-.project-card {
+.education-card {
   display: grid;
   grid-template-columns: 320px 1fr;
   gap: 3rem;
@@ -156,7 +156,7 @@ nav {
   padding-bottom: 4rem;
 }
 
-.project-image img {
+.education-image img {
   width: 100%;
   height: 260px;
   object-fit: cover;
@@ -165,29 +165,29 @@ nav {
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
 }
 
-.project-content h3 {
+.education-content h3 {
   font-size: 2rem;
   margin-bottom: 0.5rem;
   color: #4e6a5e;
 }
 
-.project-meta {
+.education-meta {
   color: #777;
   font-size: 0.95rem;
   margin-bottom: 1.5rem;
 }
 
-.project-content p {
+.education-content p {
   margin-bottom: 1.2rem;
 }
 
-.project-link {
+.education-link {
   color: #4e6a5e;
   font-weight: 700;
   text-decoration: none;
 }
 
-.project-link:hover {
+.education-link:hover {
   opacity: 0.7;
 }
 
