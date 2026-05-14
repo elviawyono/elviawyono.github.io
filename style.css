@@ -288,7 +288,7 @@ nav {
   font-weight: 600;
 }
 
-/* Smaller project cards */
+/* Smaller horizontal project cards */
 
 .small-project-grid {
   display: grid;
@@ -298,10 +298,16 @@ nav {
 }
 
 .small-project-card {
+  display: grid;
+  grid-template-columns: 130px 1fr;
+  gap: 1rem;
+  align-items: center;
   background: #fff;
   border: 1px solid rgba(45, 45, 45, 0.12);
   border-radius: 18px;
-  padding: 1.4rem;
+  padding: 1rem;
+  text-decoration: none;
+  color: inherit;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
@@ -310,15 +316,32 @@ nav {
   box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
 }
 
-.small-project-card h3 {
-  margin-top: 0;
-  margin-bottom: 0.7rem;
-  color: #153828;
+.small-project-card img {
+  width: 130px;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 14px;
+  display: block;
 }
 
-.small-project-card p {
+.small-project-content h3 {
+  margin-top: 0;
+  margin-bottom: 0.45rem;
+  color: #153828;
+  font-size: 1rem;
+}
+
+.small-project-content p {
+  margin: 0 0 0.7rem;
   color: #555;
-  line-height: 1.6;
+  line-height: 1.5;
+  font-size: 0.92rem;
+}
+
+.small-project-link {
+  color: #4e6a5e;
+  font-weight: 700;
+  font-size: 0.9rem;
 }
 
 /* =========================================================
