@@ -136,7 +136,7 @@ transform: translateY(-70px);
 .cumberland-hero h1 {
   font-size: 6rem;
   line-height: 0.95;
-  color: #153828;
+  color: #153828; 
   margin-bottom: 2rem;
   text-shadow: none;
 }
@@ -357,7 +357,7 @@ footer {
 /* ---------- CONTACT SECTION ---------- */
 
 .contact-section {
-  background-color: #35524a;
+  background-color: #153828;
   color: white;
   padding: 5rem 2rem;
   text-align: center;
