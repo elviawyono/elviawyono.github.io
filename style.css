@@ -251,6 +251,39 @@ h2 {
   min-width: 300px;
 }
 
+/* ---------- PUBLICATIONS ---------- */
+
+.publication-item {
+  padding: 1.8rem 0;
+  border-bottom: 1px solid rgba(45,45,45,0.18);
+}
+
+.pub-title {
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #2d2d2d;
+  margin-bottom: 0.4rem;
+}
+
+.pub-authors {
+  margin-bottom: 0.3rem;
+}
+
+.pub-details {
+  color: #666;
+  font-size: 0.95rem;
+}
+
+.publication-item a {
+  color: #4e6a5e;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.publication-item a:hover {
+  text-decoration: underline;
+}
+
 /* ---------- LOCATION SECTION ---------- */
 
 .location-section {
