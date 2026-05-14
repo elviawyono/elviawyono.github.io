@@ -227,9 +227,102 @@ nav {
   text-decoration: underline;
 }
 
+/* =========================================================
+   7. PROJECTS SECTION
+========================================================= */
+
+.projects-section {
+  padding: 5rem 0;
+}
+
+.section-intro {
+  max-width: 760px;
+  margin-bottom: 3rem;
+  color: #555;
+  line-height: 1.7;
+}
+
+/* Larger project cards */
+
+.featured-project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.gallery-card.featured {
+  min-height: 540px;
+}
+
+.gallery-card.featured img {
+  height: 260px;
+}
+
+.gallery-card.featured h3 {
+  font-size: 1.25rem;
+  color: #153828;
+}
+
+.project-card-link {
+  margin-top: 1rem;
+  color: #4e6a5e !important;
+  font-weight: 700;
+}
+
+/* Tags */
+
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin-top: 1rem;
+}
+
+.project-tags span {
+  font-size: 0.75rem;
+  background: #e5ebd7;
+  color: #153828;
+  padding: 0.35rem 0.65rem;
+  border-radius: 999px;
+  font-weight: 600;
+}
+
+/* Smaller project cards */
+
+.small-project-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.2rem;
+  margin-top: 2rem;
+}
+
+.small-project-card {
+  background: #fff;
+  border: 1px solid rgba(45, 45, 45, 0.12);
+  border-radius: 18px;
+  padding: 1.4rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.small-project-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+}
+
+.small-project-card h3 {
+  margin-top: 0;
+  margin-bottom: 0.7rem;
+  color: #153828;
+}
+
+.small-project-card p {
+  color: #555;
+  line-height: 1.6;
+}
 
 /* =========================================================
-   7. CUMBERLAND PAGE: HERO Cumberland-specific top section.
+   8. CUMBERLAND PAGE: HERO Cumberland-specific top section.
 ========================================================= */
 
 .cumberland-hero {
@@ -283,7 +376,7 @@ nav {
 
 
 /* =========================================================
-   8. CUMBERLAND PAGE: APPROACH / MODEL COMPARISON
+   9. CUMBERLAND PAGE: APPROACH / MODEL COMPARISON
 ========================================================= */
 
 .model-comparison {
@@ -334,7 +427,7 @@ nav {
 
 
 /* =========================================================
-   9. CUMBERLAND PAGE: LOCATION / MAP SECTION
+   10. CUMBERLAND PAGE: LOCATION / MAP SECTION
 ========================================================= */
 
 .location-section {
@@ -358,7 +451,7 @@ nav {
 
 
 /* =========================================================
-   10. CUMBERLAND PAGE: GALLERY
+   11. CUMBERLAND PAGE: GALLERY
 ========================================================= */
 
 #gallery {
@@ -418,7 +511,7 @@ nav {
 
 
 /* =========================================================
-   11. CUMBERLAND PAGE: RELATED WORK
+   12. CUMBERLAND PAGE: RELATED WORK
 ========================================================= */
 
 #related-work {
@@ -473,7 +566,7 @@ nav {
 
 
 /* =========================================================
-   12. CONTACT SECTION - all pages
+   13. CONTACT SECTION - all pages
 ========================================================= */
 
 .contact-section {
@@ -535,7 +628,7 @@ nav {
 
 
 /* =========================================================
-   13. EMAIL INTERACTION
+   14. EMAIL INTERACTION
 ========================================================= */
 
 .email-container {
@@ -580,7 +673,7 @@ nav {
 
 
 /* =========================================================
-   14. FOOTER / ALL PAGES
+   15. FOOTER / ALL PAGES
 ========================================================= */
 
 footer {
@@ -591,18 +684,34 @@ footer {
 
 
 /* =========================================================
-   15. RESPONSIVE: TABLET These styles only apply on screens 900px wide or smaller.
+   16. RESPONSIVE: TABLET These styles only apply on screens 900px wide or smaller.
 ========================================================= */
 
 @media (max-width: 900px) {
   .gallery-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
+   .featured-project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .small-project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery-card.featured {
+    min-height: auto;
+  }
+
+  .gallery-card.featured img {
+    height: 220px;
+  }
 }
 
 
 /* =========================================================
-   16. RESPONSIVE: MOBILE / TABLET These styles only apply on screens 768px wide or smaller.
+   17. RESPONSIVE: MOBILE / TABLET These styles only apply on screens 768px wide or smaller.
 ========================================================= */
 
 @media (max-width: 768px) {
@@ -679,11 +788,11 @@ footer {
     height: 180px;
   }
 
-  .project-card {
+  .education-card {
     grid-template-columns: 1fr;
   }
 
-  .project-image img {
+  .education-pimage img {
     height: 220px;
   }
 
@@ -737,7 +846,7 @@ footer {
 
 
 /* =========================================================
-   17. RESPONSIVE: SMALL MOBILE These styles only apply on screens 600px wide or smaller.
+   18. RESPONSIVE: SMALL MOBILE These styles only apply on screens 600px wide or smaller.
 ========================================================= */
 
 @media (max-width: 600px) {
