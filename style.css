@@ -269,13 +269,31 @@ nav {
 }
 
 .experience-marker {
-  width: 18px;
-  height: 18px;
-  background-color: #153828;
-  border: 4px solid #f4f1e8;
-  border-radius: 50%;
-  margin: 1rem auto 0;
+  position: relative;
+  width: 42px;
+  height: 42px;
+  margin: 0.35rem auto 0;
   z-index: 2;
+}
+
+/* This cream circle sits behind the icon.
+   It prevents the timeline line from showing through the arrow cutout. */
+.experience-marker::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: #f4f1e8;
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.experience-marker img {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain;
 }
 
 .experience-card {
@@ -1008,9 +1026,11 @@ footer {
   .related-work-grid {
     grid-template-columns: 1fr;
   }
-
-   .experience-timeline::before {
-    left: 9px;
+   
+  .experience-timeline::before {
+    left: 14px;
+    width: 4px;
+    transform: translateX(-50%);
   }
 
   .experience-item {
@@ -1026,9 +1046,9 @@ footer {
   }
 
   .experience-marker {
-    grid-column: 1;
-    grid-row: 1 / span 2;
-    margin-top: 0.3rem;
+    width: 34px;
+    height: 34px;
+    margin-top: 0.1rem;
   }
 
   .experience-card {
