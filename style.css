@@ -247,9 +247,12 @@ nav {
   position: absolute;
   top: 0;
   bottom: 0;
-  left: 185px;
-  width: 2px;
+  left: calc(150px + 1rem + 35px);
+  width: 3px;
   background-color: #c8a96b;
+  border-radius: 999px;
+  transform: translateX(-50%);
+  z-index: 0;
 }
 
 .experience-item {
@@ -269,10 +272,26 @@ nav {
 }
 
 .experience-marker {
-  width: 42px;
-  height: 42px;
-  margin: 0.35rem auto 0;
+  position: relative;
+  width: 34px;
+  height: 34px;
+  background-color: #153828;
+  border-radius: 50%;
+  justify-self: center;
+  margin-top: 0.2rem;
   z-index: 2;
+}
+
+.experience-marker::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 9px;
+  height: 9px;
+  border-top: 3px solid #f4f1e8;
+  border-right: 3px solid #f4f1e8;
+  transform: translate(-60%, -50%) rotate(45deg);
 }
 
 .experience-marker img {
