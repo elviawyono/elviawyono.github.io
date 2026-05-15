@@ -267,7 +267,7 @@ nav {
   color: #777;
   font-size: 0.9rem;
   line-height: 1.5;
-  padding-top: 2rem;
+  padding-top: 3rem;
   text-align: right;
 }
 
@@ -278,7 +278,7 @@ nav {
   background-color: #153828;
   border-radius: 50%;
   justify-self: center;
-  margin-top: 1.25rem;
+  margin-top: 1.5rem;
   z-index: 2;
 }
 
