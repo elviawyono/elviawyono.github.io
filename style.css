@@ -276,17 +276,6 @@ nav {
   z-index: 2;
 }
 
-/* This cream circle sits behind the icon.
-   It prevents the timeline line from showing through the arrow cutout. */
-.experience-marker::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-color: #f4f1e8;
-  border-radius: 50%;
-  z-index: 0;
-}
-
 .experience-marker img {
   position: relative;
   z-index: 1;
