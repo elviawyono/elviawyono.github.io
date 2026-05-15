@@ -603,5 +603,20 @@ function copyEmail(event) {
 }
 </script>
 
+<script>
+  function toggleExperience() {
+    const timeline = document.getElementById("experienceTimeline");
+    const button = document.getElementById("experienceButton");
+
+    timeline.classList.toggle("expanded");
+
+    if (timeline.classList.contains("expanded")) {
+      button.textContent = "Show less";
+    } else {
+      button.textContent = "Show more";
+    }
+  }
+</script>
+
 </body>
 </html>
