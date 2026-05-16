@@ -75,6 +75,32 @@ nav {
   opacity: 0.65;
 }
 
+.nav-links a {
+  position: relative;
+  text-decoration: none;
+  color: #2d2d2d;
+  font-weight: 600;
+  font-size: 0.95rem;
+  letter-spacing: 0.04em;
+  transition: 0.2s;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.35rem;
+  width: 0;
+  height: 2px;
+  background-color: #153828;
+  border-radius: 999px;
+  transition: width 0.2s ease;
+}
+
+.nav-links a:hover::after,
+.nav-links a.active::after {
+  width: 100%;
+}
 
 /* =========================================================
    3. HOME PAGE HERO - Main landing-page hero section.
