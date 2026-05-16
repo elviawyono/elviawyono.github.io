@@ -1,1 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+  <title>Fort Saskatchewan Project | Elfi Wyono</title>
+
+  <!-- Main shared stylesheet -->
+  <link rel="stylesheet" href="../style.css" />
+
+  <!-- Fort Sask project-specific stylesheet -->
+  <link rel="stylesheet" href="fortsask.css" />
+</head>
+
+<body>
+
+  <!-- NAVIGATION -->
+  <header class="site-header">
+    <nav class="navbar">
+      <div class="nav-logo">
+        <a href="../index.html">Elfi Wyono</a>
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="../index.html#about">About</a></li>
+        <li><a href="../index.html#projects" class="active">Projects</a></li>
+        <li><a href="../index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="fort-hero">
+      <div class="fort-hero-content">
+        <p class="project-label">PhD research in progress</p>
+        <h1>Collaborative Land-Use Futures in Fort Saskatchewan</h1>
+        <p>
+          Exploring how systems mapping and visualization can support planning conversations.
+        </p>
+      </div>
+    </section>
+
+    <!-- PROJECT CONTEXT -->
+    <section class="project-section intro-section">
+      <p class="section-kicker">Project Context</p>
+      <h2>Understanding land-use connections through systems mapping</h2>
+      <p>
+        This project explores how participatory systems mapping and landscape visualization can support collaborative land-use planning in Fort Saskatchewan, Alberta. Using a climate–biodiversity–health lens, the research looks at how land-use decisions may connect to community well-being, recreation, environmental conditions, and long-term planning priorities.
+      </p>
+    </section>
+
+    <!-- WHY FORT SASKATCHEWAN -->
+    <section class="project-section two-column">
+      <div>
+        <p class="section-kicker">Why Fort Saskatchewan?</p>
+        <h2>A place-based planning context</h2>
+        <p>
+          Fort Saskatchewan brings together urban growth, parks and recreation, river valley landscapes, industrial activity, agricultural land, and community infrastructure. These overlapping systems make it a useful context for exploring relationships, trade-offs, and possible future directions.
+        </p>
+      </div>
+
+      <div class="note-card">
+        <h3>Current focus</h3>
+        <p>
+          The project is currently in the early research design and workshop testing stage.
+        </p>
+      </div>
+    </section>
+
+    <!-- TEST WORKSHOP -->
+    <section class="project-section workshop-section">
+      <p class="section-kicker">Test Workshop</p>
+      <h2>Testing the process before future stakeholder engagement</h2>
+      <p>
+        The current workshop is designed to test the structure, materials, and clarity of the systems mapping activity. It is not intended to produce final findings or formal recommendations.
+      </p>
+
+      <div class="three-card-grid">
+        <div class="small-card">
+          <h3>Clarity</h3>
+          <p>Is the activity easy to understand?</p>
+        </div>
+
+        <div class="small-card">
+          <h3>Discussion</h3>
+          <p>Does the mapping process support conversation?</p>
+        </div>
+
+        <div class="small-card">
+          <h3>Refinement</h3>
+          <p>What needs to be adjusted before future sessions?</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section class="project-section">
+      <p class="section-kicker">Research Process</p>
+      <h2>Current project flow</h2>
+
+      <div class="process-steps">
+        <div>Review planning documents</div>
+        <div>Identify key themes</div>
+        <div>Develop initial systems map</div>
+        <div>Test workshop structure</div>
+        <div>Refine materials</div>
+      </div>
+    </section>
+
+    <!-- CLOSING NOTE -->
+    <section class="project-section closing-note">
+      <p>
+        This page will be updated as the project develops.
+      </p>
+    </section>
+
+  </main>
+
+ <!-- ---------- CONTACT ---------- --> 
+  
+<section id="contact" class="contact-section">  
+  <h2>Let’s Connect</h2>
+
+  <p>
+    Feel free to reach out, I'd love to connect!
+  </p>
+
+  <div class="email-container">
+
+  <div class="email-box"
+       id="email-box"
+       onmouseenter="showEmail()"
+       onmouseleave="hideEmail()"
+       onclick="copyEmail(event)">
+
+    <span id="email-text">Email</span>
+
+    <button class="copy-button"
+            id="copy-btn">
+      Copy
+    </button>
+
+  </div>
+
+</div>
+
+  <div class="contact-buttons">
+
+    <a class="contact-button secondary"
+       href="https://linkedin.com/in/elviaw"
+       target="_blank">
+
+       LinkedIn
+
+    </a>
+
+  </div>
+
+</section>
+
+  <!-- FOOTER -->
+  
+  <footer>
+    
+    <p>© 2026 Elvia Willyono</p>
+    
+  </footer>
+  
+<script>
+const myEmail = "elviaw@uvic.ca";
+
+function isMobile() {
+  return window.innerWidth <= 768;
+}
+
+function showEmail() {
+  if (isMobile()) return;
+
+  const box = document.getElementById("email-box");
+  box.classList.add("expanded");
+
+  document.getElementById("email-text").innerText = myEmail;
+}
+
+function hideEmail() {
+  if (isMobile()) return;
+
+  const box = document.getElementById("email-box");
+  box.classList.remove("expanded");
+
+  document.getElementById("email-text").innerText = "Email";
+  document.getElementById("copy-btn").innerText = "Copy";
+}
+
+function copyEmail(event) {
+  event.stopPropagation();
+
+  navigator.clipboard.writeText(myEmail);
+
+  const box = document.getElementById("email-box");
+  box.classList.add("expanded");
+
+  document.getElementById("email-text").innerText =
+    myEmail;
+
+  document.getElementById("copy-btn").style.display =
+  "inline-block";
+
+  document.getElementById("copy-btn").innerText =
+  "Copied!";
+
+  setTimeout(() => {
+    document.getElementById("copy-btn").innerText = "Copy";
+
+    if (isMobile()) {
+      box.classList.remove("expanded");
+      document.getElementById("email-text").innerText = "Email";
+    }
+  }, 1500);
+}
+</script>
+
+<script>
+  function toggleExperience() {
+    const timeline = document.getElementById("experienceTimeline");
+    const button = document.getElementById("experienceButton");
+
+    timeline.classList.toggle("expanded");
+
+    if (timeline.classList.contains("expanded")) {
+      button.textContent = "Show less";
+    } else {
+      button.textContent = "Show more";
+    }
+  }
+
+const sections = document.querySelectorAll("section[id]");
+  const navLinks = document.querySelectorAll(".nav-links a");
+
+  window.addEventListener("scroll", () => {
+    let current = "";
+
+    sections.forEach((section) => {
+      const sectionTop = section.offsetTop - 120;
+      const sectionHeight = section.offsetHeight;
+
+      if (window.scrollY >= sectionTop && window.scrollY < sectionTop + sectionHeight) {
+        current = section.getAttribute("id");
+      }
+    });
+
+    navLinks.forEach((link) => {
+      link.classList.remove("active");
+
+      if (link.getAttribute("href") === "#" + current) {
+        link.classList.add("active");
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
