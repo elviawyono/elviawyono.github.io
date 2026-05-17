@@ -272,8 +272,7 @@
   .fort-hero-image img {
     max-width: 100%;
   }
-}
-
+  
   .two-column,
   .three-card-grid,
   .process-steps {
@@ -287,4 +286,5 @@
   .cbh-section {
     grid-template-columns: 1fr;
     padding: 4rem 6%;
+  }
 }
