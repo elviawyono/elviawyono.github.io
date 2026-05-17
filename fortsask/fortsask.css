@@ -5,10 +5,20 @@
   display: flex;
   align-items: center;
   padding: 7rem 8%;
-  background:
-    radial-gradient(circle at 78% 28%, rgba(21, 56, 40, 0.18), transparent 28%),
-    radial-gradient(circle at 88% 75%, rgba(188, 150, 92, 0.18), transparent 30%),
-    linear-gradient(135deg, #f4f1e8 0%, #eef0e6 45%, #dfe7dc 100%);
+
+  background-image:
+    linear-gradient(
+      to right,
+      rgba(244, 241, 232, 0.96) 0%,
+      rgba(244, 241, 232, 0.86) 42%,
+      rgba(244, 241, 232, 0.35) 100%
+    ),
+    url("images/hero.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
   position: relative;
   overflow: hidden;
 }
