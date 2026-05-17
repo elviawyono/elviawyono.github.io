@@ -1,23 +1,28 @@
 /* ---------- FORT SASKATCHEWAN PAGE ---------- */
 
 .fort-hero {
-  min-height: 78vh;
+  min-height: 88vh;
   display: flex;
   align-items: center;
   padding: 7rem 8%;
+  position: relative;
+  overflow: hidden;
 
   background-image:
     linear-gradient(
       to right,
-      rgba(244, 241, 232, 0.96) 0%,
-      rgba(244, 241, 232, 0.86) 42%,
-      rgba(244, 241, 232, 0.35) 100%
+      rgba(221, 232, 213, 0.98) 0%,
+      rgba(238, 240, 230, 0.92) 34%,
+      rgba(244, 241, 232, 0.72) 56%,
+      rgba(244, 241, 232, 0.25) 78%,
+      rgba(244, 241, 232, 0.05) 100%
     ),
     url("images/hero.jpg");
 
   background-size: cover;
-  background-position: center;
+  background-position: center right;
   background-repeat: no-repeat;
+}
 
   position: relative;
   overflow: hidden;
@@ -27,17 +32,18 @@
   content: "";
   position: absolute;
   inset: 0;
-  background-image:
-    linear-gradient(rgba(21, 56, 40, 0.08) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(21, 56, 40, 0.08) 1px, transparent 1px);
-  background-size: 54px 54px;
-  opacity: 0.35;
+  background:
+    radial-gradient(ellipse at 8% 20%, transparent 0 28%, rgba(21, 56, 40, 0.08) 29%, transparent 30%),
+    radial-gradient(ellipse at 12% 34%, transparent 0 36%, rgba(21, 56, 40, 0.06) 37%, transparent 38%),
+    radial-gradient(ellipse at 18% 18%, transparent 0 44%, rgba(21, 56, 40, 0.05) 45%, transparent 46%);
+  opacity: 0.6;
+  pointer-events: none;
 }
 
 .fort-hero-content {
   max-width: 760px;
   position: relative;
-  z-index: 1;
+  z-index: 2;
 }
 
 .project-label,
