@@ -196,8 +196,6 @@
 
 /* ---------- METHODS SECTION ---------- */
 
-/* ---------- METHODS SECTION ---------- */
-
 .methods-section {
   background: #f4f1e8;
 }
@@ -210,74 +208,31 @@
 }
 
 .method-card {
-  position: relative;
-  overflow: hidden;
+  background: rgba(255, 255, 255, 0.72);
   border-radius: 28px;
+  padding: 2rem;
   aspect-ratio: 1 / 1;
   min-height: 260px;
-  background: #f4f1e8;
   box-shadow: 0 12px 30px rgba(21, 56, 40, 0.12);
 
   display: flex;
-  align-items: center;
+  flex-direction: column;
   justify-content: center;
   text-align: center;
 }
 
-.method-card::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-size: cover;
-  background-position: center;
-  opacity: 0.55;
-  z-index: 0;
-}
-
-.method-card-1::before {
-  background-image: url("images/phase1.png");
-}
-
-.method-card-2::before {
-  background-image: url("images/phase2.png");
-}
-
-.method-card-3::before {
-  background-image: url("images/phase3.png");
-}
-
-.method-card::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(244, 241, 232, 0.18);
-  z-index: 1;
-}
-
-.method-card-content {
-  position: relative;
-  z-index: 2;
-  background: rgba(255, 255, 255, 0.82);
-  padding: 1.1rem 1.2rem;
-  border-radius: 18px;
-  box-shadow: 0 8px 24px rgba(21, 56, 40, 0.12);
-  backdrop-filter: blur(2px);
-  max-width: 82%;
-}
-
-.method-card-content h3 {
+.method-card h3 {
   color: #8a3f12;
   text-transform: uppercase;
   letter-spacing: 0.04em;
-  margin-bottom: 0.6rem;
-  font-size: 1.05rem;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
 }
 
-.method-card-content p {
+.method-card p {
   color: #222;
-  line-height: 1.45;
+  line-height: 1.5;
   margin-bottom: 0;
-  font-size: 0.95rem;
 }
 
 /* ---------- CURRENT PROGRESS ---------- */
@@ -386,6 +341,11 @@
 
   .method-grid {
     grid-template-columns: 1fr;
+  }
+
+  .method-card {
+    aspect-ratio: auto;
+    min-height: 220px;
   }
 }
 
