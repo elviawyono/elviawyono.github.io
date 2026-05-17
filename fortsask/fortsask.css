@@ -216,7 +216,7 @@
   inset: 0;
   background-size: cover;
   background-position: center;
-  opacity: 0.22;
+  opacity: 0.45;
   z-index: 0;
 }
 
@@ -237,7 +237,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(244, 241, 232, 0.68);
+  background: rgba(244, 241, 232, 0.38);
   z-index: 1;
 }
 
