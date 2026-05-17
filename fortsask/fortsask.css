@@ -194,6 +194,71 @@
   line-height: 1.55;
 }
 
+/* ---------- METHODS SECTION ---------- */
+
+.methods-section {
+  background: #f4f1e8;
+}
+
+.method-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 28px;
+  padding: 2rem;
+  min-height: 230px;
+  background: #f4f1e8;
+  box-shadow: 0 12px 30px rgba(21, 56, 40, 0.12);
+}
+
+.method-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.22;
+  z-index: 0;
+}
+
+/* Card background images */
+.method-card-1::before {
+  background-image: url("images/phase1.png");
+}
+
+.method-card-2::before {
+  background-image: url("images/phase2.png");
+}
+
+.method-card-3::before {
+  background-image: url("images/phase3.png");
+}
+
+.method-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(244, 241, 232, 0.68);
+  z-index: 1;
+}
+
+.method-card h3,
+.method-card p {
+  position: relative;
+  z-index: 2;
+}
+
+.method-card h3 {
+  color: #8a3f12;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 0.8rem;
+}
+
+.method-card p {
+  color: #222;
+  line-height: 1.5;
+}
+
 /* ---------- PROCESS STEPS ---------- */
 
 .process-steps {
