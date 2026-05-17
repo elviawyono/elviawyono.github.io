@@ -196,16 +196,25 @@
 
 /* ---------- METHODS SECTION ---------- */
 
+/* ---------- METHODS SECTION ---------- */
+
 .methods-section {
   background: #f4f1e8;
+}
+
+.method-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 2.5rem;
 }
 
 .method-card {
   position: relative;
   overflow: hidden;
   border-radius: 28px;
-  padding: 2rem;
-  min-height: 230px;
+  aspect-ratio: 1 / 1;
+  min-height: 260px;
   background: #f4f1e8;
   box-shadow: 0 12px 30px rgba(21, 56, 40, 0.12);
 
@@ -215,27 +224,16 @@
   text-align: center;
 }
 
-.method-card-content {
-  position: relative;
-  z-index: 2;
-  background: rgba(255, 255, 255, 0.78);
-  padding: 1.25rem 1.4rem;
-  border-radius: 20px;
-  box-shadow: 0 8px 24px rgba(21, 56, 40, 0.12);
-  backdrop-filter: blur(2px);
-}
-
 .method-card::before {
   content: "";
   position: absolute;
   inset: 0;
   background-size: cover;
   background-position: center;
-  opacity: 0.6;
+  opacity: 0.55;
   z-index: 0;
 }
 
-/* Card background images */
 .method-card-1::before {
   background-image: url("images/phase1.png");
 }
@@ -256,22 +254,30 @@
   z-index: 1;
 }
 
-.method-card h3,
-.method-card p {
-  margin-left: auto;
-  margin-right: auto;
+.method-card-content {
+  position: relative;
+  z-index: 2;
+  background: rgba(255, 255, 255, 0.82);
+  padding: 1.1rem 1.2rem;
+  border-radius: 18px;
+  box-shadow: 0 8px 24px rgba(21, 56, 40, 0.12);
+  backdrop-filter: blur(2px);
+  max-width: 82%;
 }
 
-.method-card h3 {
+.method-card-content h3 {
   color: #8a3f12;
   text-transform: uppercase;
   letter-spacing: 0.04em;
-  margin-bottom: 0.8rem;
+  margin-bottom: 0.6rem;
+  font-size: 1.05rem;
 }
 
-.method-card p {
+.method-card-content p {
   color: #222;
-  line-height: 1.5;
+  line-height: 1.45;
+  margin-bottom: 0;
+  font-size: 0.95rem;
 }
 
 /* ---------- CURRENT PROGRESS ---------- */
