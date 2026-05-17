@@ -274,6 +274,21 @@
   line-height: 1.5;
 }
 
+/* ---------- CURRENT PROGRESS ---------- */
+
+.progress-image {
+  border-radius: 28px;
+  overflow: hidden;
+  box-shadow: 0 16px 40px rgba(21, 56, 40, 0.16);
+  background: #f4f1e8;
+}
+
+.progress-image img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
 /* ---------- PROCESS STEPS ---------- */
 
 .process-steps {
