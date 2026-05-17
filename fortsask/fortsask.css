@@ -261,7 +261,6 @@
 }
 
 /* ---------- RESPONSIVE ---------- */
-
 @media (max-width: 850px) {
   .fort-hero {
     grid-template-columns: 1fr;
@@ -272,19 +271,16 @@
   .fort-hero-image img {
     max-width: 100%;
   }
-  
+
   .two-column,
   .three-card-grid,
-  .process-steps {
+  .process-steps,
+  .cbh-section {
     grid-template-columns: 1fr;
   }
 
   .workshop-section {
     border-radius: 24px;
   }
-
-  .cbh-section {
-    grid-template-columns: 1fr;
-    padding: 4rem 6%;
-  }
 }
+
