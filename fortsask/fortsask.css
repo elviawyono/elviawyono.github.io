@@ -383,5 +383,9 @@
   .workshop-section {
     border-radius: 24px;
   }
+
+  .method-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
