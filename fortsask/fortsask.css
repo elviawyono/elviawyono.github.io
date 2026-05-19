@@ -245,11 +245,6 @@
 }
 
 /* ---------- EMBED MAP ---------- */
-.map-section {
-  max-width: 1180px;
-  margin: 0 auto;
-}
-
 .map-card {
   width: 100%;
   margin-top: 2rem;
